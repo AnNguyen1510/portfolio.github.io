@@ -1,0 +1,170 @@
+.special-menu {
+    text-align: center;
+    background-color: $background-color;
+    padding: 50px;
+
+    &__h1 {
+        font-family: "Rochester", cursive;
+        color: $primary-color;
+       margin-bottom: 15px;
+        font-size: 40px;
+    }
+    &__h2 {
+        color:black;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    &__h3 {
+        width: 100%;
+        font-family: "Rochester", cursive;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .separator {
+        display: inline-block;
+        width: 40px;
+        border-bottom: 2px solid #ffffff ;
+        margin: 15px auto;
+
+
+        &__orange {
+            display: inline-block;
+        width: 40px;
+        border-bottom: 2px solid $primary-color ;
+        margin: 15px auto;
+        }
+    }
+
+    &__h4 {
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 2px;
+        width: 100%;
+        font-size: 130%;
+    }
+    
+    &__p{
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+       padding: 30px 30px;
+       width: 100%;
+
+    }
+
+    &__container {
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+       justify-content: flex-start;
+       align-content: center;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+
+.special-menu-col {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .col-large {
+        width: 50%;
+        height: 450px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+
+        
+    }
+    .col-large-1,
+    .col-large-3 {
+        background-color: $primary-color;
+        color: white;
+       justify-content: center;
+    }
+    .fa-ice-cream {
+       width: 100%; 
+       font-size: 50px;
+       margin-bottom: 10px;
+    }
+    .col-large-2 {
+        background-image: url(../image/sp1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .col-large-4 {
+        background-image: url(../image/sp2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .col-small {
+        width: 50%;
+        height: 225px;
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+
+        &__h3 {
+        width: 100%;
+        font-family: "Rochester", cursive;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: $primary-color;
+        }
+        &__h4 {
+            width: 100%;
+            color: black;
+            letter-spacing: 2px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 130%;
+            padding-bottom: 10px;
+        }
+        &__h5 {
+            width: 100%;
+            color: black;
+            letter-spacing: 2px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+    }
+    .col-small-1 {
+        background-color: #ffffff
+    }
+    .col-small-2{
+        background-image: url(../image/sp2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .col-small-3 {
+        background-image: url(../image/sp3.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .col-small-4 {
+        background-image: url(../image/sp4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .col-small-5 {
+        background-image: url(../image/sp5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .fa-hamburger {
+        color: $primary-color;
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: 10pxSS;
+    }
+
+
+}
+
+

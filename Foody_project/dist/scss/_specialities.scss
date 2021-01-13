@@ -1,0 +1,122 @@
+.specialities-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/bg-spec.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.specialities-middle {
+  text-align: center;
+  position: relative;
+}
+.spec {
+    font: 40px;
+   
+}
+.spec1 {
+    font-size: 50px;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.specialities-row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.specialities-col{
+    width: 350px;
+    height: 250px;
+    margin: 0 20px 0;
+    position: relative;
+    
+}
+.specialities-img1,
+.specialities-img2,
+.specialities-img3 {
+   width: 100%;
+   height: 100%;
+   margin-bottom: 30px;
+   @include transition-ease;
+   
+  
+}
+.specialities-img1{
+  
+    background-image: url(../image/spec1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.specialities-img2{
+   
+    background-image: url(../image/spec2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.specialities-img3{
+    background-image: url(../image/spec3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.specialities-h3 {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    @include transition-ease;
+    margin-bottom: 100px;
+    
+}
+// .specialities-overlay {
+//     background-color: $overlay-color;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     padding: 10px;
+//     opacity: 0;
+//     transition: all 0.3s ease-in-out;
+// }
+.specialities-col:hover .specialities-img1 {
+    filter: brightness(50%) blur(2px);
+    
+}
+.specialities-col:hover .specialities-img2 {
+    filter: brightness(50%) blur(2px);
+    
+}
+.specialities-col:hover .specialities-img3 {
+    filter: brightness(50%) blur(2px);
+    
+}
+.specialities-col:hover .specialities-h3 {
+    transform: translate(-50%,-350%);
+    opacity: 1;
+}
+
+
+.specialities-middle:before {
+    content: '';
+    position:absolute;
+    border-top: 100px solid $background-color;
+    border-right: 100vw solid transparent;
+    top: -100px;
+    left: 0;
+}
+.specialities-middle:after {
+    content: '';
+    position:absolute;
+    border-bottom: 100px solid $background-color;
+    border-left: 100vw solid transparent;
+    bottom: -100px;
+    right: 0;
+}

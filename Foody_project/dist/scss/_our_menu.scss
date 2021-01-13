@@ -1,0 +1,73 @@
+.our-menu {
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/our-menu.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 150px 50px;
+
+    &__h1 {
+        font-family: "Rochester", cursive;
+        color: $primary-color;
+        font-size: 40px;
+        margin-bottom: -10px;
+    }
+    &__h2 {
+        color: white;
+        letter-spacing: 2px;
+        padding-top: 20px;
+        font-size: 30px;
+        // font-weight: 700;
+        font-family: "Oswald", sans-serif;
+    }
+    &__separator {
+        display: inline-block;
+        border-bottom: 2px solid $primary-color;
+        width: 160px;
+        margin-top: -10px;
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+    &__col {
+        width: 40%;
+        max-width: 500px;
+        padding-top: 30px;
+        padding-left: 100px;
+    }
+
+    .food-container {
+        color: #ffffff;
+        text-align: left;
+        margin-bottom: 20px;
+
+        &__ingredients {
+            text-transform: lowercase;
+            font-family: 'Bodoni Moda', serif;
+        }
+        &__title {
+            display: inline-block;
+            text-transform: uppercase;
+            color: $text-color-our-menu;
+            font-family: 'Bodoni Moda', serif;
+            font-size: 20px;
+        }
+        &__price {
+            font-size: 25px;
+            color: $primary-color;
+        }
+    }
+    &__btn {
+        background-color: transparent;
+        padding: 10px 20px;
+        color: white;
+        border: 1px solid white;
+        margin-top: 50px;
+        @include transition-ease;
+    }
+    &__btn:hover {
+        background-color: $text-color-our-menu;
+        color: black;
+    }
+}

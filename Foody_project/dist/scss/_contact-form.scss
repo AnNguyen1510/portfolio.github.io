@@ -1,0 +1,47 @@
+.contact-form {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    
+    .contact2 {
+        padding-bottom: 20px;
+        margin-top: -20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        color: $primary-color;
+    }
+    &__col{
+        &-text {
+            font-size: 17px;
+            font-weight: 500;
+            padding: 10px 0;
+        }
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    .copyright {
+        width: 100%;
+        padding: 50px 0 0;
+        color: #ffffff;
+        font-size: 14px;
+        border-top: 1px solid $background-color;
+        &__name {
+            color: $primary-color;
+        }
+    }
+}
+.fa-facebook,.fa-twitter ,.fa-pinterest-square,.fa-instagram {
+    padding-right: 5px;
+    @include transition-ease;
+}
+.fa-facebook:hover,.fa-twitter:hover,.fa-pinterest-square:hover,.fa-instagram:hover {
+    @include scale;
+}

@@ -1,0 +1,28 @@
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$background-color: #F2F2F2;
+$text-color-our-menu: #CED2C2;
+$text-color: rgb(99,99,99);
+$primary-color: #F2AC32;
+$overlay-color: rgba(rgb(99,99,99),0.6);
+
+h1,h2,h3,a{
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+@mixin scale {
+    transform: scale(1.3);
+}
